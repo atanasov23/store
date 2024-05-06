@@ -400,8 +400,9 @@ section input[type=text] {
     margin-right: 0.7em;
 }
 
-.item-image{
-    background-repeat:no-repeat;
-    background-size:contain;
-    height:200px;width:200px;
+.item-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
 }

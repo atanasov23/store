@@ -141,36 +141,9 @@
         </aside>
 
         <div class="items-container">
-
+            
         </div>
     </div>
-
-    <!-- <script>
-    $.get("http://detelinaivie.bg/cms/php/store_products.php", function (res, status) {
-        for (let element of JSON.parse(res)) {
-            $("#category-list").append(`<li id="${element.id}" class="cat-list-item sortable-item">
-                    <div class="link-wrapper" data-id="$rows[name]">
-                        <a href="/cms/catalog/products?Id=${element.id}" class="category-link" title="${element.name}"><span
-                                class="cat-link-name fw-semibold">${element.name}</span></a>
-                        <a href="/cms/catalog/details?Id=&amp;editId=${element.id}"
-                            class="btn btn-primary btn-sm settings-icon" id=edit_category title="Редакция на категория" >Редакция</a>
-                        <i class="fas fa-eye view-icon" id=view-icon title="Направи невидима"></i>
-                    </div>
-                </li>`);
-            $(`#${element.id}, #cat_0`).click(function (e) {
-                e.preventDefault();
-                if (e.currentTarget.children[0].getAttribute('href') !== null) {
-                    window.history.pushState('', '', `/cms/catalog/products?Id=0`);
-                    $('.btn-add-new').attr('href', `/cms/product/details?catId=0`);
-                } else {
-                    window.history.pushState('', '', `/cms/catalog/products?Id=${element.id}`);
-                    $('.btn-add-new').attr('href', `/cms/product/details?catId=${element.id}`);
-                }
-
-            });
-        }
-    });
-</script> -->
 </body>
 
 <script src="/cms/js/products.js"></script>
