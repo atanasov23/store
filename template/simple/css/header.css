@@ -1,0 +1,154 @@
+.logo-img a img {
+    display: inline-block;
+    width: 82px;
+    height: 82px;
+}
+
+.logo {
+    display: flex;
+}
+
+p {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.container-menu {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.c-1,
+.c-2,
+.c-3 {
+    width: 35px;
+    height: 1px;
+    background-color: #333;
+    transition: 0.4s;
+}
+
+.container-menu .c-1 {
+    margin-bottom: 0.5em;
+}
+
+.container-menu .c-2 {
+    margin-bottom: 0.5em;
+}
+
+.change .c-1 {
+    transform: translate(0, 9px) rotate(-45deg);
+}
+
+.change .c-2 {
+    opacity: 0;
+}
+
+.change .c-3 {
+    transform: translate(0, -9px) rotate(45deg);
+}
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+}
+
+.toogle-search {
+    display: inline-block;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 0.4em;
+}
+
+.head-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.head-contacts ul li {
+    display: inline-block;
+    margin-left: 0.7em;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu div {
+    margin: 0.2em;
+    font-size: 17px;
+}
+
+.main-menu {
+    display: none;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.main-menu li {
+    margin: 2em;
+}
+
+.search-form {
+    display: inline-block;
+    display: none;
+}
+
+.field-box input {
+    border: 1px solid #e0e0e0;
+    outline: none;
+    width: 250px;
+    height: 38px;
+}
+
+.field-box button {
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .head-contacts,
+    .mobile-menu p,
+    .search-box a p {
+        display: none;
+    }
+
+    .field-box {
+        display: inline-block;
+    }
+
+    .field-box input {
+        display: inline-block;
+        width: 200px;
+        height: 38px;
+        outline: none;
+    }
+
+    .field-box button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .field-box button {
+        position: absolute;
+        font-size: 22px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .header-menu {
+        position: relative;
+    }
+
+    .search-form {
+        right: 90%;
+        top: 25%;
+        position: absolute;
+    }
+}
