@@ -132,7 +132,7 @@
                 </ul>
             </div>
 
-            <form class="add-new-category my-3 me-2 pt-4" id="addNewCategory" method="POST">
+            <form class="add-new-category my-3 me-2 pt-4" id="addNewCategory">
                 <div class="input-group">
                     <input type="text" class="form-control fst-italic new-category" placeholder="Име на категорията" name="newCategory" data-validation="presence" />
                     <input class="btn btn-primary btn-sm" id="btn-sm" type="submit" value="Създай" />
@@ -146,6 +146,6 @@
     </div>
 </body>
 
-<script src="/cms/js/products.js"></script>
+<script src="/cms/js/index.js"></script>
 
 </html>
